@@ -7,30 +7,30 @@
   <body>
   <header class="main-header">
       <div class="header-top">
-        <a class="main-header-logo">
-          <img src="img/index-logo.svg" width="250" height="150" alt="Логотип ТЕХНОМАРТ">
+        <a href="index.html">
+        <img src="img/index-logo.svg" width="250" height="150" alt="Логотип ТЕХНОМАРТ">
         </a>
         <!-- Здесь будет форма -->
         <ul class="user-blok">
            <li><a href="mark.html">Закладки</a></li>
            <li><a href="basket.html">Корзина</a></li>
            <li><a href="order.html">Оформить заказ</a></li>
-          </ul>
-        </div>
-        <div class="header-mid">
+        </ul>
+       </div>
+       <div class="header-mid">
            <p>Интернет-магазин строительных материалов и иструментов для ремонта</p>
-            <p><a href="#">+7(812)55-05-55</a></p>
+           <p><a href="tel:+7812550555">+7(812)55-05-55</a></p>
            <p>г.Санкт-Петербург, ул.Конюшенная, д.19/8</p>
         <ul class="user-navigation">
-           <li><a href="go.html"> Войти</a></li>
+           <li><a href="go.html">Войти</a></li>
            <li><a href="register.html">Регистрация</a></li>
-           </ul>
+        </ul>
         </div>
         <div class="header-bot">
         <ul class="site-navigation">
-          <li><a href="main.html">Главная</a></li>
+          <li>Главная</li>
           <li><a href="company.html">Компания</a></li>
-          <li><a href="price.html">Каталог</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
           <li><a href="news.html">Новости</a></li>
           <li><a href="sale.html">Спецпредложение</a></li>
           <li><a href="contacts.html">Контакты</a></li>
@@ -38,10 +38,10 @@
         </div>
     </header>
     <main class="container">
-         <ul class="list">
-             <li><a href="#">Католог</a></li>
+         <ul class="breadcrumbs">
+             <li><a href="#">Каталог</a></li>
              <li><a href="#">Инструменты</a></li>
-           <li><a href="#">Перфораторы</a></li>
+             <li><a href="#">Перфораторы</a></li>
          </ul>
          <section class="page-title">
            <h1 class="page-title-products">Перфораторы</h1>
@@ -57,21 +57,25 @@
                 <li>По Функционалу</li>
              </ul>
          </div>
-         <!-- Здесь будет форма -->
+         <div class="price">
+             <img src="number"width="200" height="150" alt="сортировка цены">
+             <p>0</p>
+             <p>300000</p>
+             <h3>Производители</h3>
+             <!-- Здесь будет форма -->
+             <h3>Питание</h3>
+             <!-- Здесь будет форма -->
+         </div>
          <section>
          <ul class="catalog-list">
           <li class="catalog-item">
             <h3>
               <a href="catalog-item.html">
-                <span class="catalog-category">Перфоратор BOSCH BFG 3000</span>
+              <img src="img/product-1.jpg" width="200" height="150" alt="Перфоратор 3000">
+              <span class="catalog-category">Перфоратор BOSCH BFG 3000</span>
               </a>
             </h3>
-            <p class="catalog-item-image">
-              <a href="catalog-item.html">
-                <img src="img/product-1.jpg" width="200" height="150" alt="Перфоратор 3000">
-              </a>
-            </p>
-            <p class="catalog-item-price"><del>22500P</del>
+              <p class="catalog-item-price"><del>22500P</del>
               <a class="button" href="#">15500Р</a>
             </p>
           </li>
@@ -80,34 +84,26 @@
           <li class="catalog-item">
             <h3>
               <a href="catalog-item.html">
-                <span class="catalog-category">Перфоратор BOSCH BFG 6000</span>
+                <img src="img/product-2.jpg" width="200" height="150" alt="Перфоратор 6000">
+                <span class="catalog-category">Перфоратор BOSCH BFG 6000
+                </span>
               </a>
             </h3>
-            <p class="catalog-item-image">
-              <a href="catalog-item.html">
-                <img src="img/product-2.jpg" width="200" height="150" alt="Перфоратор 6000">
-              </a>
-            </p>
-            <p class="catalog-item-price"><del>30500P</del>
+              <p class="catalog-item-price"><del>30500P</del>
               <a class="button" href="#">22500Р</a>
-            </p>
+              </p>
           </li>
          </ul>
          <ul class="catalog-list">
           <li class="catalog-item">
             <h3>
               <a href="catalog-item.html">
-                <span class="catalog-category">Перфоратор BOSCH BFG 2000</span>
+              <img src="img/product-3.jpg" width="200" height="150" alt="Перфоратор 2000">
+              <span class="catalog-category">Перфоратор BOSCH BFG 2000
+              </span>
               </a>
             </h3>
-            <p class="catalog-item-image">
-              <a href="catalog-item.html">
-                <img src="img/product-3.jpg" width="200" height="150" alt="Перфоратор 2000">
-              </a>
-            </p>
-            <p>
-            <a class="button" href="#">12500Р</a>
-            </p>
+            <p><a class="button" href="#">12500Р</a></p>
           </li>
         </ul>
         <ul class="pagination-list">
@@ -124,38 +120,37 @@
     </section>
     </main>
     <footer class="main-footer">
-               <div class="footer-top">
-                   <img src="img/index-logo.svg" width="250" height="150" alt="Логотип ТЕХНОМАРТ">
-                    <ul class="site-navigation">
-                        <li><a href="company.html">Компания</a></li>
-                        <li><a href="news.html">Новости</a></li>
-                        <li><a href="price.html">Каталог</a></li>
-                        <li><a href="delivery.html">Доставка</a></li>
-                         <li><a href="contacts.html">Контакты</a></li>
-                    </ul>
-                </div> 
-                <div class="footer-mid">
-                     <p class="footer-contacts">Г. Санкт-Петербург, ул.Б.Конюшевская,д.19/8  +7 (812)555-05-55</p>
-                     <ul class="site-navigation">
-                         <li><a href="#">Материалы</a></li>
-                         <li><a href="#">Техника</a></li>
-                         <li><a href="#">Инструменты</a></li>
-                         <li><a href="sale.html">Спецпредложение</a></li>
-                     </ul>                      
-                </div>
-                <div class="footer-bot">
-                     <p>@2010-2017 Компания "Техномарт"</p><br>
-                     <p>Все права защищены</p>
-                     <ul>
-                        <li><a class="social-button" href="#">Вконтакте</a></li>
-                        <li><a class="social-button" href="#">Фейсбук</a></li>
-                        <li><a class="social-button" href="#">Инстаграм</a></li> 
-                    </ul>
-                    <p>Обратная связь:</p><br>
-                    <p>mail@Htmlacademy.ru</p>
-                    <p>Разработано-htmlacademy.ru</p>
-                </div>
+         <div class="footer-top">
+            <img src="img/index-logo.svg" width="250" height="150" alt="Логотип ТЕХНОМАРТ">
+            <ul class="site-navigation">
+               <li><a href="company.html">Компания</a></li>
+               <li><a href="news.html">Новости</a></li>
+               <li><a href="catalog.html">Каталог</a></li>
+               <li><a href="delivery.html">Доставка</a></li>
+               <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+         </div> 
+         <div class="footer-mid">
+             <p class="footer-contacts">Г. Санкт-Петербург, ул.Б.Конюшевская,д.19/8 <a href="tel:+7812550555">+7 (812)555-05-55</a></p>
+            <ul class="site-navigation">
+               <li><a href="#">Материалы</a></li>
+               <li><a href="#">Техника</a></li>
+               <li><a href="#">Инструменты</a></li>
+               <li><a href="#">Спецпредложение</a></li>
+            </ul>                      
+          </div>
+          <div class="footer-bot">
+            <p>@2010-2017 Компания "Техномарт"</p>
+            <p>Все права защищены</p>
+            <ul>
+                <li><a class="social-button" href="#">Вконтакте</a></li>
+                <li><a class="social-button" href="#">Фейсбук</a></li>
+                <li><a class="social-button" href="#">Инстаграм</a></li> 
+            </ul>
+                <p>Обратная связь:</p>
+                <p>mail@Htmlacademy.ru</p>
+                <p>Разработано-htmlacademy.ru</p>
+           </div>
         </footer>
       </body>
-</html>
 </html>
