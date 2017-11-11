@@ -33,7 +33,7 @@
            <li><a href="register.html">Регистрация</a></li>
         </ul>
         </div>
-        <div class="header-bot">
+        <nav class="header-bot">
         <ul class="site-navigation">
           <li>Главная</li>
           <li><a href="company.html">Компания</a></li>
@@ -42,7 +42,7 @@
           <li><a href="sale.html">Спецпредложение</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
-        </div>
+        </nav>
     </header>
     <main class="container">
        <section class="blok1">
@@ -87,30 +87,38 @@
        <section>
          <ul class="catalog-list">
           <li class="catalog-item">
-              <img src="img/Layer-1.jpg" width="217" height="146" alt="Перфоратор 9000">
-              <h3>Перфоратор BOSCH BFG 9000</h3>
-              <p class="catalog-item-price"><del>32500P</del></p>
-              <img src="img/red-button.svg" width="141" height="38" alt="Красная кнопка">
+             <a href="catalog-item.html">
+                  <img src="img/Layer-1.jpg" width="217" height="146" alt="Перфоратор 9000">
+                  <h3>Перфоратор BOSCH BFG 9000</h3>
+                  <p class="catalog-item-price"><del>32500P</del></p>                
+              </a>
+              <img src="img/red-button.svg" width="141" height="38" alt="Красная кнопка">   
               <a class="button" href="#">25500Р</a>          
           </li>
           <li class="catalog-item">
-              <img src="img/Layer-2.jpg" width="217" height="146" alt="Перфоратор 3000">
-              <h3>Перфоратор BOSCH BFG 3000</h3>        
-              <p class="catalog-item-price"><del>22500P</del></p>
+             <a href="catalog-item.html">
+                  <img src="img/Layer-2.jpg" width="217" height="146" alt="Перфоратор 3000">
+                  <h3>Перфоратор BOSCH BFG 3000</h3>        
+                  <p class="catalog-item-price"><del>22500P</del></p>
+              </a>
               <img src="img/red-button.svg" width="141" height="38" alt="Красная кнопка">
               <a class="button" href="#">15500Р</a>              
           </li> 
           <li class="catalog-item">
-              <img src="img/Layer-3.jpg" width="217" height="146" alt="Перфоратор 6000">
-              <h3>Перфоратор BOSCH BFG 6000</h3>          
-            <p class="catalog-item-price"><del>30500P</del></p>
+             <a href="catalog-item.html">
+                  <img src="img/Layer-3.jpg" width="217" height="146" alt="Перфоратор 6000">
+                  <h3>Перфоратор BOSCH BFG 6000</h3>          
+                  <p class="catalog-item-price"><del>30500P</del></p>
+            </a>
             <img src="img/red-button.svg" width="141" height="38" alt="Красная кнопка">
             <a class="button" href="#">22500Р</a>           
           </li>
           <li class="catalog-item">
-              <img src="img/newflag-1.png" width="60" height="59" alt="новый товар">
-              <img src="img/Layer-4.jpg" width="217" height="146" alt="Перфоратор 2000">
-              <h3>Перфоратор BOSCH BFG 2000</h3>
+             <a href="catalog-item.html">
+                  <img src="img/newflag-1.png" width="60" height="59" alt="новый товар">
+                  <img src="img/Layer-4.jpg" width="217" height="146" alt="Перфоратор 2000">
+                  <h3>Перфоратор BOSCH BFG 2000</h3>
+              </a>
               <img src="img/red-button.svg" width="141" height="38" alt="Красная кнопка">
               <a class="button" href="#">12500Р</a>
           </li>
@@ -182,18 +190,20 @@
                  <li>ЖелДорЭкспедиция</li>
                  <li><a href="#">Подробнее о компании</a></li>
              </ul>
+         </section>    
              <div class="map">
                 <h2>Контакты</h2>
                 <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-                <img src="img/map.jpg" width="300" height="158" alt="Карта">
-                <!--Карта в развернутом виде
-                <img src="img/map popup.jpg" width="300" height="158" alt="Карта">-->
+                <img src="img/map.jpg" width="300" height="158" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
                 <p><a href="#">Заблудились напишите нам</a></p>
              </div>
-        </section>
+             <div class="modal modal-map">
+                    <img src="img/map-popup.jpg" width="970" height="476" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+                  <button class="modal-close" type="button">Закрыть</button>
+             </div>        
       </main>
  <footer class="main-footer">
-         <div class="footer-top">
+         <nav class="footer-top">
             <img src="img/index-logo.svg" width="250" height="150" alt="Логотип ТЕХНОМАРТ">
             <ul class="site-navigation">
                <li><a href="company.html">Компания</a></li>
@@ -202,8 +212,8 @@
                <li><a href="delivery.html">Доставка</a></li>
                <li><a href="contacts.html">Контакты</a></li>
             </ul>
-         </div> 
-         <div class="footer-mid">
+         </nav> 
+         <nav class="footer-mid">
              <p class="footer-contacts">Г. Санкт-Петербург, ул.Б.Конюшевская,д.19/8 <a href="tel:+7812550555">+7 (812)555-05-55</a></p>
             <ul class="site-navigation">
                <li><a href="#">Материалы</a></li>
@@ -211,7 +221,7 @@
                <li><a href="#">Инструменты</a></li>
                <li><a href="#">Спецпредложение</a></li>
             </ul>                      
-          </div>
+          </nav>
           <div class="footer-bot">
             <p>@2010-2017 Компания "Техномарт"</p>
             <p>Все права защищены</p>
@@ -234,5 +244,23 @@
                 <p><a href="http://htmlacademy.ru">Разработано-htmlacademy.ru</a></p>
            </div>
         </footer>
+        <section class="modal modal-letter">
+              <form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
+                <p>
+                  <label class="visually-hidden" for="user-name">Ваше имя</label>
+                  <input class="login-icon-user" id="user-name" type="text" name="user-name" placeholder="Представьтесь пожалуйста">
+                </p>
+                <p>
+                  <label class="visually-hidden" for="user-adress">Ваш e-mail</label>
+                  <input class="login-icon-password" id="user-adress" type="text" name="adress" placeholder="Для отправки ответа">
+                </p>
+                <p>
+                  <label class="visually-hidden" for="user-text-letter">Текст письма</label>
+                  <input class="login-icon-password" id="user-text-letter" type="text" name="user-text-letter" placeholder="В свободной форме">
+                </p>
+              </form>
+              <button class="button" type="submit">Отправить</button>
+              <button class="modal-close" type="button">Закрыть</button>
+        </section>     
       </body>
 </html>

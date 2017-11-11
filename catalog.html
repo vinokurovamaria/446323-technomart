@@ -27,10 +27,16 @@
            <img src="img/icon-phone.svg" width="19" height="19" alt="иконка телефон">
            <p><a href="tel:+7812550555">+7(812)55-05-55</a></p>
            <p>г.Санкт-Петербург, ул.Конюшенная, д.19/8</p>
+        <div class="user-name">
+            <p class="appointment-item">
+            <label for="appointment-name">
+            <input id="appointment-name" type="text" name="name" value="" placeholder="Равшан Джамшутович">
+            </label>
+          </p>
+        </div>
         <ul class="user-navigation">
            <li> 
              <img src="img/icon-user.svg" width="19" height="19" alt="user">
-             <img src="img/icon-logout.svg" width="21" height="17" alt="logout">Равшан Джамшутович</li>
            <li><a href="#">Мои заказы</a></li>
            <li><a href="#">Личный кабинет</a></li>
         </ul>
@@ -80,75 +86,135 @@
                  <img class=sort src="11.jpg" width="50" height="50" alt="стрелки вверх">
                  <img class=sort src="11.jpg" width="50" height="50" alt="стрелки вниз">
          </div>
-         <!-- Здесь будет форма -->
-         <div class="price">
+         <div class="sorting-price">
              <p>0</p>
-             <p>300000</p>
-             <h3>Производители</h3>
-             <h3>Питание</h3>
-         </div>
+             <p>-</p>
+             <p>30000</p>
+         </div>       
+         <section class="filters">
+         <h2 class="visually-hidden">Фильтр товаров</h2>
+         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+            <fieldset>
+                <legend>Производители:</legend>
+                <ul>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Bosch" id="filter-Bosch" checked>
+                    <label for="filter-Bosch">Bosch</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol" id="filter-interskol">
+                    <label for="filter-interskol">Интерсколл</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Makita" id="filter-Makita" checked>
+                    <label for="filter-Makita">Makita</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Dewalt" id="filter-Dewalt">
+                    <label for="filter-Dewalt">Dewalt</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Hitachi" id="filter-Hitachi">
+                    <label for="filter-Hitachi">Hitachi</label>
+                  </li>
+             </ul>
+           </fieldset>
+           <fieldset>
+            <legend>Питание</legend>
+                <ul>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="battery" id="filter-battery" checked>
+                    <label for="filter-battery">Аккумуляторные</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="network-battery" id="filter-network-battery">
+                    <label for="filter-network-battery">Сетевые</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <button type="submit" class="filter-button button">Показать</button>
+            </form>
+         </section>
          <section>
          <ul class="catalog-list">
           <li class="catalog-item">
-              <img src="img/Layer-2.jpg" width="217" height="146" alt="Перфоратор 3000">
-              <h3>Перфоратор BOSCH BFG 3000</h3>
-              <p class="catalog-item-price"><del>22500P</del></p>
+             <a href="catalog-item.html">
+                  <img src="img/Layer-2.jpg" width="217" height="146" alt="Перфоратор 3000">
+                  <h3>Перфоратор BOSCH BFG 3000</h3>
+                  <p class="catalog-item-price"><del>22500P</del></p>
+              </a> 
               <img src="img/red-button.svg" width="141" height="38" alt="Красная кнопка">
               <a class="button" href="#">15500Р</a>         
           </li>
           <li class="catalog-item">
-              <img src="img/Layer-3.jpg" width="217" height="146" alt="Перфоратор 6000">
-              <h3>Перфоратор BOSCH BFG 6000</h3>        
-              <p class="catalog-item-price"><del>30500P</del></p>
+             <a href="catalog-item.html">
+                  <img src="img/Layer-3.jpg" width="217" height="146" alt="Перфоратор 6000">
+                  <h3>Перфоратор BOSCH BFG 6000</h3>        
+                  <p class="catalog-item-price"><del>30500P</del></p>
+              </a>    
               <img src="img/red-button.svg" width="141" height="38" alt="Красная кнопка">
               <a class="button" href="#">25500Р</a>              
           </li> 
           <li class="catalog-item">
-              <img src="img/newflag-1.png" width="60" height="59" alt="новый товар">
-              <img src="img/Layer-4.jpg" width="217" height="146" alt="Перфоратор 2000">
-              <h3>Перфоратор BOSCH BFG 2000</h3>
+             <a href="catalog-item.html">
+                  <img src="img/newflag-1.png" width="60" height="59" alt="новый товар">
+                  <img src="img/Layer-4.jpg" width="217" height="146" alt="Перфоратор 2000">
+                  <h3>Перфоратор BOSCH BFG 2000</h3>
+              </a>
               <img src="img/red-button.svg" width="141" height="38" alt="Красная кнопка">
               <a class="button" href="#">12500Р</a>
           </li>
            <li class="catalog-item">
-              <img src="img/Layer-2.jpg" width="217" height="146" alt="Перфоратор 3000">
-              <h3>Перфоратор BOSCH BFG 3000</h3>
-              <p class="catalog-item-price"><del>22500P</del></p>
-              <img src="img/red-button.svg" width="141" height="38" alt="Красная кнопка"> 
+              <a href="catalog-item.html">
+                  <img src="img/Layer-2.jpg" width="217" height="146" alt="Перфоратор 3000">
+                  <h3>Перфоратор BOSCH BFG 3000</h3>
+                  <p class="catalog-item-price"><del>22500P</del></p>
+               </a>    
+               <img src="img/red-button.svg" width="141" height="38" alt="Красная кнопка"> 
                <a class="button" href="#">15500Р</a>                        
           </li>
           <li class="catalog-item">
-              <img src="img/newflag-1.png" width="60" height="59" alt="новый товар">
-              <img src="img/Layer-3.jpg" width="217" height="146" alt="Перфоратор 6000">
-              <h3>Перфоратор BOSCH BFG 6000</h3>        
-              <p class="catalog-item-price"><del>30500P</del></p>
+              <a href="catalog-item.html">
+                  <img src="img/newflag-1.png" width="60" height="59" alt="новый товар">
+                  <img src="img/Layer-3.jpg" width="217" height="146" alt="Перфоратор 6000">
+                  <h3>Перфоратор BOSCH BFG 6000</h3>        
+                  <p class="catalog-item-price"><del>30500P</del></p>
+              </a>    
               <img src="img/red-button.svg" width="141" height="38" alt="Красная кнопка">
               <a class="button" href="#">25500Р</a>              
           </li> 
           <li class="catalog-item">
-              <img src="img/Layer-4.jpg" width="217" height="146" alt="Перфоратор 2000">
-              <h3>Перфоратор BOSCH BFG 2000</h3>
+              <a href="catalog-item.html">
+                  <img src="img/Layer-4.jpg" width="217" height="146" alt="Перфоратор 2000">
+                  <h3>Перфоратор BOSCH BFG 2000</h3>
+              </a>
               <img src="img/red-button.svg" width="141" height="38" alt="Красная кнопка">
               <a class="button" href="#">12500Р</a>
           </li>
            <li class="catalog-item">
-              <img src="img/newflag-1.png" width="60" height="59" alt="новый товар">
-              <img src="img/Layer-2.jpg" width="217" height="146" alt="Перфоратор 3000">
-              <h3>Перфоратор BOSCH BFG 3000</h3>
-              <p class="catalog-item-price"><del>22500P</del></p>
+              <a href="catalog-item.html">
+                  <img src="img/newflag-1.png" width="60" height="59" alt="новый товар">
+                  <img src="img/Layer-2.jpg" width="217" height="146" alt="Перфоратор 3000">
+                  <h3>Перфоратор BOSCH BFG 3000</h3>
+                  <p class="catalog-item-price"><del>22500P</del></p>
+              </a>
               <img src="img/red-button.svg" width="141" height="38" alt="Красная кнопка">
               <a class="button" href="#">15500Р</a>           
           </li>
           <li class="catalog-item">
-              <img src="img/Layer-3.jpg" width="217" height="146" alt="Перфоратор 6000">
-              <h3>Перфоратор BOSCH BFG 6000</h3>        
-              <p class="catalog-item-price"><del>30500P</del></p>
+              <a href="catalog-item.html">
+                  <img src="img/Layer-3.jpg" width="217" height="146" alt="Перфоратор 6000">
+                  <h3>Перфоратор BOSCH BFG 6000</h3>        
+                  <p class="catalog-item-price"><del>30500P</del></p>
+              </a>
               <img src="img/red-button.svg" width="141" height="38" alt="Красная кнопка">
               <a class="button" href="#">25500Р</a>      
           </li> 
           <li class="catalog-item">
-              <img src="img/Layer-4.jpg" width="217" height="146" alt="Перфоратор 2000">
-              <h3>Перфоратор BOSCH BFG 2000</h3>
+              <a href="catalog-item.html">
+                  <img src="img/Layer-4.jpg" width="217" height="146" alt="Перфоратор 2000">
+                  <h3>Перфоратор BOSCH BFG 2000</h3>
+              </a>
               <img src="img/red-button.svg" width="141" height="38" alt="Красная кнопка">
               <a class="button" href="#">12500Р</a>
           </li>          
