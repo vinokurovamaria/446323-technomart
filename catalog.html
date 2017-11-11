@@ -24,7 +24,8 @@
               <form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
                  <label for="appointment-name">Поиск</label>
                  <input id="appointment-name" type="text" name="seach">
-              </form>  
+                 <input type="submit" class="button visually-hidden">
+              </form> 
         </section>
        <div class="header-mid">
            <p>Интернет-магазин строительных материалов и иструментов для ремонта</p>
@@ -32,11 +33,7 @@
            <p><a href="tel:+7812550555">+7(812)55-05-55</a></p>
            <p>г.Санкт-Петербург, ул.Конюшенная, д.19/8</p>
         <div class="user-name">
-            <p class="appointment-item">
-            <label for="appointment-name">
-            <input id="appointment-name" type="text" name="name" placeholder="Равшан Джамшутович">
-            </label>
-          </p>
+            <p>Равшан Джамшутович</p>
         </div>
         <ul class="user-navigation">
            <li> 
@@ -89,36 +86,42 @@
              </ul>
                  <img class=sort src="11.jpg" width="50" height="50" alt="стрелки вверх">
                  <img class=sort src="11.jpg" width="50" height="50" alt="стрелки вниз">
-         </div>
-         <div class="sorting-price">
-             <p>0</p>
-             <p>-</p>
-             <p>30000</p>
-         </div>       
+        </div>     
          <section class="filters">
          <h2 class="visually-hidden">Фильтр товаров</h2>
          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+           <fieldset>
+                <legend>Цена:</legend>
+                <ul>
+                  <li class="filter-option">
+                  <input class="filter-prices" id="filter-prices" type="number" name="prices" placeholder="0">
+                  </li>
+                  <li class="filter-option">
+                    <input class="filter-prices" id="filter-prices" type="number" name="prices" placeholder="30000">
+                  </li>
+               </ul>
+            </fieldset>      
             <fieldset>
                 <legend>Производители:</legend>
                 <ul>
                   <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Bosch" id="filter-Bosch" checked>
+                    <input class="filter-input-checkbox" type="checkbox" name="Bosch" id="filter-Bosch" checked>
                     <label for="filter-Bosch">Bosch</label>
                   </li>
                   <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol" id="filter-interskol">
+                    <input class="filter-input-checkbox" type="checkbox" name="interskol" id="filter-interskol">
                     <label for="filter-interskol">Интерсколл</label>
                   </li>
                   <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Makita" id="filter-Makita" checked>
+                    <input class="filter-input-checkbox" type="checkbox" name="Makita" id="filter-Makita" checked>
                     <label for="filter-Makita">Makita</label>
                   </li>
                   <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Dewalt" id="filter-Dewalt">
+                    <input class="filter-input-checkbox" type="checkbox" name="Dewalt" id="filter-Dewalt">
                     <label for="filter-Dewalt">Dewalt</label>
                   </li>
                   <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Hitachi" id="filter-Hitachi">
+                    <input class="filter-input-checkbox" type="checkbox" name="Hitachi" id="filter-Hitachi">
                     <label for="filter-Hitachi">Hitachi</label>
                   </li>
              </ul>
@@ -127,11 +130,11 @@
             <legend>Питание</legend>
                 <ul>
                   <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="battery" id="filter-battery" checked>
+                    <input class="filter-input-radio" type="radio" name="product-group" value="battery" id="filter-battery" checked>
                     <label for="filter-battery">Аккумуляторные</label>
                   </li>
                   <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="network-battery" id="filter-network-battery">
+                    <input class="filter-input-radio" type="radio" name="product-group" value="network-battery" id="filter-network-battery">
                     <label for="filter-network-battery">Сетевые</label>
                   </li>
                 </ul>
@@ -261,16 +264,16 @@
             <p>Все права защищены</p>
             <ul>
                 <li>
-                <img src="img/icon-vk.svg" width="26" height="15" alt="ВК">
-                <a class="social-button" href="#">Вконтакте</a>
+                    <img src="img/icon-vk.svg" width="26" height="15" alt="ВК">
+                    <a class="social-button" href="#">Вконтакте</a>
                 </li>
                 <li>
-                <img src="img/icon-fb.svg" width="12" height="22" alt="фейсбук">
-                <a class="social-button" href="#">Фейсбук</a>
+                    <img src="img/icon-fb.svg" width="12" height="22" alt="фейсбук">
+                    <a class="social-button" href="#">Фейсбук</a>
                 </li>
                 <li>
-                <img src="img/icon-insta.svg" width="21" height="21" alt="инстаграмм">
-                <a class="social-button" href="#">Инстаграм</a>
+                    <img src="img/icon-insta.svg" width="21" height="21" alt="инстаграмм">
+                    <a class="social-button" href="#">Инстаграм</a>
                 </li> 
             </ul>
                 <p>Обратная связь:</p>
@@ -279,7 +282,7 @@
            </div>
            </footer>
            
-           <section class="modal modal-popup">
+           <section class="modal-popup">
               <h2>Товар добавлен в корзину!</h2>
               <button class="button" type="submit">Оформить заказ</button>
               <button class="button" type="submit">Продолжить покупки</button>

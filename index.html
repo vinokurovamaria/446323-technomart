@@ -20,10 +20,12 @@
            </li>
            <li><a href="order.html">Оформить заказ</a></li>
         </ul>
+      </div>
         <section class="seach">
               <form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
                  <label for="appointment-name">Поиск</label>
                  <input id="appointment-name" type="text" name="seach">
+                 <input type="submit" class="button visually-hidden">
               </form>  
         </section>
         <div class="header-mid">
@@ -32,7 +34,7 @@
            <p><a href="tel:+7812550555">+7(812)55-05-55</a></p>
            <p>г.Санкт-Петербург, ул.Конюшенная, д.19/8</p>
         <ul class="user-navigation">
-           <li><a href="go.html"> Войти</a></li>
+           <li><a href="go.html">Войти</a></li>
            <li><a href="register.html">Регистрация</a></li>
         </ul>
         </div>
@@ -202,11 +204,11 @@
              </div>
              <div class="modal modal-map">
                     <img src="img/map-popup.jpg" width="970" height="476" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-                  <button class="modal-close" type="button">Закрыть</button>
+                    <button class="modal-close" type="button">Закрыть</button>
              </div>        
       </main>
  <footer class="main-footer">
-         <nav class="footer-top">
+         <div class="footer-top">
             <img src="img/index-logo.svg" width="250" height="150" alt="Логотип ТЕХНОМАРТ">
             <ul class="site-navigation">
                <li><a href="company.html">Компания</a></li>
@@ -215,8 +217,8 @@
                <li><a href="delivery.html">Доставка</a></li>
                <li><a href="contacts.html">Контакты</a></li>
             </ul>
-         </nav> 
-         <nav class="footer-mid">
+         </div> 
+         <div class="footer-mid">
              <p class="footer-contacts">Г. Санкт-Петербург, ул.Б.Конюшевская,д.19/8 <a href="tel:+7812550555">+7 (812)555-05-55</a></p>
             <ul class="site-navigation">
                <li><a href="#">Материалы</a></li>
@@ -224,7 +226,7 @@
                <li><a href="#">Инструменты</a></li>
                <li><a href="#">Спецпредложение</a></li>
             </ul>                      
-          </nav>
+          </div>
           <div class="footer-bot">
             <p>@2010-2017 Компания "Техномарт"</p>
             <p>Все права защищены</p>
@@ -249,21 +251,22 @@
         </footer>
         <section class="modal modal-letter">
               <form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
-                <p>
-                  <label class="visually-hidden" for="user-name">Ваше имя</label>
-                  <input class="login-icon-user" id="user-name" type="text" name="user-name" placeholder="Представьтесь пожалуйста">
-                </p>
-                <p>
-                  <label class="visually-hidden" for="user-adress">Ваш e-mail</label>
-                  <input class="login-icon-password" id="user-adress" type="text" name="adress" placeholder="Для отправки ответа">
-                </p>
-                <p>
-                  <label class="visually-hidden" for="user-text-letter">Текст письма</label>
-                  <input class="login-icon-password" id="user-text-letter" type="text" name="user-text-letter" placeholder="В свободной форме">
-                </p>
+                   <p>Ваше имя:</p>
+                   <p>
+                      <textarea rows="2" cols="25" name="text">Представьтесь, пожалуйста</textarea>
+                   </p>
+                   <p>Ваш e-mail:</p>
+                  <p>
+                   <textarea type="email" rows="2" cols="25" name="text">Для отправки ответа</textarea>
+                  </p>
+                  <p>Текст письма:</p>
+                   <p>
+                      <textarea rows="10" cols="45" name="text">В свободной форме</textarea>
+                   </p>
+                  <button class="button" type="submit">Отправить</button>
+                  <button class="modal-close" type="button">Закрыть</button>
               </form>
-              <button class="button" type="submit">Отправить</button>
-              <button class="modal-close" type="button">Закрыть</button>
+              
         </section>     
       </body>
 </html>
