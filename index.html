@@ -251,22 +251,19 @@
         </footer>
         <section class="modal modal-letter">
               <form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
-                   <p>Ваше имя:</p>
-                   <p>
-                      <textarea rows="2" cols="25" name="text">Представьтесь, пожалуйста</textarea>
-                   </p>
-                   <p>Ваш e-mail:</p>
                   <p>
-                   <textarea type="email" rows="2" cols="25" name="text">Для отправки ответа</textarea>
+                      <label for="popup-1">Ваше имя:</label>
+                      <textarea name="textform" rows="2" cols="25" id="popup-1" placeholder="Представьтесь, пожалуйста"></textarea>
                   </p>
-                  <p>Текст письма:</p>
-                   <p>
-                      <textarea rows="10" cols="45" name="text">В свободной форме</textarea>
-                   </p>
+                     <label for="popup-2">Ваш e-mail:</label>
+                     <input name="textform" class="textpopup" type="email" id="popup-2" placeholder="Поле для ввода данных">
+                  <p>
+                      <label for="popup-3">Текст письма:</label>
+                      <textarea name="textform" rows="10" cols="45" id="popup-3" placeholder="В свободной форме"></textarea>
+                  </p>
                   <button class="button" type="submit">Отправить</button>
                   <button class="modal-close" type="button">Закрыть</button>
-              </form>
-              
+              </form>             
         </section>     
       </body>
 </html>
