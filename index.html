@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,400i,700&amp;subset=cyrillic-ext" rel="stylesheet">
   </head>
   <body>
   <header class="main-header">
@@ -29,13 +32,13 @@
               </form>  
         </section>
         <div class="header-mid">
-           <p>Интернет-магазин строительных материалов и иструментов для ремонта</p>
+           <h3>Интернет-магазин строительных материалов и иструментов для ремонта</h3>
            <img src="img/icon-phone.svg" width="19" height="19" alt="иконка телефон">
            <p><a href="tel:+7812550555">+7(812)55-05-55</a></p>
-           <p>г.Санкт-Петербург, ул.Конюшенная, д.19/8</p>
+           <p class="adress">г.Санкт-Петербург, ул.Конюшенная, д.19/8</p>
         <ul class="user-navigation">
-           <li><a href="go.html">Войти</a></li>
-           <li><a href="register.html">Регистрация</a></li>
+           <li class="check"><a href="go.html">Войти</a></li>
+           <li class="check"><a href="register.html">Регистрация</a></li>
         </ul>
         </div>
         <nav class="header-bot">
@@ -55,35 +58,39 @@
           <h3>Материалы</h3>
            <p><a href="#">На любой вкус</a></p>
        </section>
-       <section class="blok1">
+       <section class="blok2">
           <img src="img/icon-2.svg" width="75" height="61" alt="инструмент">
           <h3>Инструмент</h3>
            <p><a href="#"> На все случаи</a></p>
        </section>
-       <section class="blok1">
+       <section class="blok2">
           <img src="img/icon-3.svg" width="78" height="62" alt="техника">
           <h3>Техника</h3>
            <p><a href="#">Для стройки</a></p>
        </section>
-       <section class="blok1">
+       <section class="blok4">
           <img src="img/icon-4.svg" width="59" height="72" alt="скидка 50 %">
           <h3>Скидка 50%</h3>
            <p><a href="#">На 350 товаров</a></p>
         </section>
-        <section class="blok1">
+        <section class="blok5">
           <img src="img/icon-5.svg" width="78" height="63" alt="доставка">
           <h3>Доставка</h3>
           <p><a href="#">Бесплатно</a></p>
         </section>
-        <section class="blok1">
+        <section class="blok6">
           <!--2 слайда-->
           <img src="img/6.jpg" width="200" height="150" alt="перфораторы">
           <h3>Перфораторы</h3>
-          <img src="img/slider 1.jpg" width="620" height="266" alt="слайдер 1">
-            <p>Дрели</p>
-            <p>Соседям на радость</p>
-            <p><a href="catalog.html">Открыть каталог</a></p>
-            <img src="img/slider 2.jpg" width="620" height="266" alt="слайдер 2">
+          <p>Настоящие мужские игрушки</p>
+          <img src="img/slider-1.jpg" width="620" height="266" alt="слайдер 1">
+          <a href="catalog.html">Открыть каталог</a>
+          </section>
+       <section class="blok7"> 
+           <h3>Дрели</h3>
+           <p>Соседям на радость</p>
+           <a href="catalog.html">Открыть каталог</a>
+           <img src="img/slider-2.jpg" width="620" height="266" alt="слайдер 2">
        </section> 
        <section class="product">
           <h2>Популярные товары</h2>
@@ -133,7 +140,7 @@
           <h2>Популярные производители</h2>
           <p><a href="#">Вcе производители</a></p>
        </section>
-       <div class=pictures-company>
+       <div class="pictures-company">
            <a href="#">
              <img src="img/bosch.jpg" width="126" height="37" alt="Производитель 1">
            </a>
@@ -160,7 +167,7 @@
            </a>
         </div>
        <section class="service">
-           <h2>Cервисы</h2>
+           <h3>Cервисы</h3>
            <p>Хороший интернет-магазин отличается отплохого не только ценами!</p>
            <p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
            <ul class="service-navigator">
