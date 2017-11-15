@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,400i,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
   <header class="main-header">
       <div class="header-top">
-          <p class=logo>Техномарт</p>
+          <p class="logo">Техномарт</p>
           <img src="img/icon-search.svg" width="17" height="17" alt="поиск">
         <ul class="user-blok">
            <li>
@@ -53,40 +53,39 @@
         </nav>
     </header>
     <main class="container">
-       <section class="blok1">
+       <section class="block block-orange">
           <img src="img/icon-1.svg" width="44" height="65" alt="материалы">
           <h3>Материалы</h3>
            <p><a href="#">На любой вкус</a></p>
        </section>
-       <section class="blok2">
+       <section class="block block-blue">
           <img src="img/icon-2.svg" width="75" height="61" alt="инструмент">
           <h3>Инструмент</h3>
-           <p><a href="#"> На все случаи</a></p>
+           <p><a href="#">На все случаи</a></p>
        </section>
-       <section class="blok2">
+       <section class="block block-purple">
           <img src="img/icon-3.svg" width="78" height="62" alt="техника">
           <h3>Техника</h3>
            <p><a href="#">Для стройки</a></p>
        </section>
-       <section class="blok4">
+       <section class="block block-green">
           <img src="img/icon-4.svg" width="59" height="72" alt="скидка 50 %">
           <h3>Скидка 50%</h3>
            <p><a href="#">На 350 товаров</a></p>
         </section>
-        <section class="blok5">
+        <section class="block block-orange-2">
           <img src="img/icon-5.svg" width="78" height="63" alt="доставка">
           <h3>Доставка</h3>
           <p><a href="#">Бесплатно</a></p>
         </section>
-        <section class="blok6">
+        <section class="block block-slide-1">
           <!--2 слайда-->
-          <img src="img/6.jpg" width="200" height="150" alt="перфораторы">
           <h3>Перфораторы</h3>
           <p>Настоящие мужские игрушки</p>
           <img src="img/slider-1.jpg" width="620" height="266" alt="слайдер 1">
           <a href="catalog.html">Открыть каталог</a>
           </section>
-       <section class="blok7"> 
+       <section class="block block-slide-2"> 
            <h3>Дрели</h3>
            <p>Соседям на радость</p>
            <a href="catalog.html">Открыть каталог</a>
@@ -171,7 +170,7 @@
            <p>Хороший интернет-магазин отличается отплохого не только ценами!</p>
            <p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
            <ul class="service-navigator">
-               <li>Доставка</li>
+               <li class="service-navigator-color">Доставка</li>
                <li>Гарантия</li>
                <li>Кредит</li>
             </ul>
@@ -216,8 +215,8 @@
       </main>
  <footer class="main-footer">
          <div class="footer-top">
-            <img src="img/index-logo.svg" width="250" height="150" alt="Логотип ТЕХНОМАРТ">
-            <ul class="site-navigation">
+            <p class="logo-footer">Техномарт</p>
+            <ul class="site-navigation-footer-1">
                <li><a href="company.html">Компания</a></li>
                <li><a href="news.html">Новости</a></li>
                <li><a href="catalog.html">Каталог</a></li>
@@ -227,7 +226,7 @@
          </div> 
          <div class="footer-mid">
              <p class="footer-contacts">Г. Санкт-Петербург, ул.Б.Конюшевская,д.19/8 <a href="tel:+7812550555">+7 (812)555-05-55</a></p>
-            <ul class="site-navigation">
+            <ul class="site-navigation-footer-2">
                <li><a href="#">Материалы</a></li>
                <li><a href="#">Техника</a></li>
                <li><a href="#">Инструменты</a></li>
@@ -252,8 +251,9 @@
                 </li> 
             </ul>
                 <p>Обратная связь:</p>
-                <p><a href="mail@Htmlacademy.ru">mail@Htmlacademy.ru</a></p>
-                <p><a href="http://htmlacademy.ru">Разработано-htmlacademy.ru</a></p>
+                <p class="mail-color-orange"><a href="mail@Htmlacademy.ru">mail@Htmlacademy.ru</a></p>
+                <p>Разработано-</p>
+                <p class="link-color-orange"><a href="http://htmlacademy.ru">htmlacademy.ru</a></p>
            </div>
         </footer>
         <section class="modal modal-letter">
