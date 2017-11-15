@@ -1,8 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-
-  font-family: "Cuprum","PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 17px;
   line-height: 17px;
   color: #000000;
@@ -15,9 +15,11 @@ body {
   color: #000000;
   background-color: #ffffff; 
 }
+
 a {
   text-decoration: none;
 }
+
 
 .main-header li,
 .header-mid .user-navigation li,
@@ -29,24 +31,30 @@ a {
   list-style: none;
 }
 
+.header-mid .user-navigation a:hover,
+.header-mid .user-navigation a:focus {
+  color: #ee3643;
+}
+
+.header-mid .user-navigation-page-2 a:hover,
+.header-mid .user-navigation-page-2 a:focus {
+  color: #ee3643;  
+}
+
 .breadcrumbs {
   list-style: none;
 }
 
-.sorting-page-2 {
+.sorting-page-2 li {
   list-style: none;  
 }
 
-.breadcrumbs a {
-  font-family: "PT Sans", Arial;  
-  font-size: 13px;
-  line-height: 18px;
-  color: #000000; 
+.catalog-list-page-2 li {
+  list-style: none;   
 }
 
-.breadcrumbs a:hover,
-.breadcrumbs a:focus {
-  text-decoration: underline;
+.pagination-list li{
+  list-style: none;  
 }
 
 .filter fieldset {
@@ -213,7 +221,7 @@ a {
   position: absolute;
 }
 .block p {
-  font-family: "PT Sans"; Arial;
+  font-family: "PT Sans", "Arial";
   color: #ffffff;
   font-size: 18px;
   line-height: 24px;    
@@ -244,7 +252,7 @@ a {
 }
 
 .catalog-item h3{
-  font-family: "PT Sans"; "Arial";
+  font-family: "PT Sans", "Arial";
   color: #000000;
   font-size: 18px;
   line-height: 20px;
@@ -252,7 +260,7 @@ a {
 }
 
 .catalog-item p {
-  font-family: "PT Sans"; "Arial";
+  font-family: "PT Sans", "Arial";
   color: #a9a9a9;
   font-size: 17px;
   line-height: 18px;
@@ -260,7 +268,7 @@ a {
 }
 
 .catalog-item a {
-  font-family: "PT Sans"; "Arial";
+  font-family: "PT Sans", "Arial";
   color: #ffffff;
   font-size: 17px;
   line-height: 28px;
@@ -309,7 +317,7 @@ a {
 }
 
 .service p {
-  font-family: "PT Sans"; "Arial";
+  font-family: "PT Sans", "Arial";
   font-size: 13px;
   line-height: 24px;
   color: #000000; 
@@ -330,7 +338,7 @@ a {
 
 .contacts h2,
 .map h2 {
-  font-family: "PT Sans"; "Arial";
+  font-family: "PT Sans", "Arial";
   font-size: 30px;
   line-height: 24px;
   text-transform: uppercase; 
@@ -338,7 +346,7 @@ a {
 
 .contacts p,
 .map p {
-  font-family: "PT Sans"; "Arial";
+  font-family: "PT Sans", "Arial";
   font-size: 13px;
   line-height: 24px;   
 }
@@ -354,20 +362,39 @@ a {
   line-height: 18px;
 }
 
+.breadcrumbs a {
+  font-family: "PT Sans", "Arial";  
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000; 
+}
+
 .page-title-products {
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
 }
 
-.sorting-page-2 {
+.sorting-page-2 a {
   font-size: 13px;
   line-height: 18px;
-  color: color: #000000;
+  color: #000000;
+  text-transform: uppercase;  
+}
+
+.sorting-page-2 .sorting page-2-color-red {
+  color: #ee3643;
+    
+}
+
+.sorting-page-2 .sorting-page-2-color-black {
+  color: rgba( 0, 0, 0, 0.1);
+  border-bottom: 1px dashed #ee3643; 
+  
 }
 
 .filter legend {
-  font-family: "PT Sans"; "Arial"; 
+  font-family: "PT Sans", "Arial"; 
   font-size: 17px;
   line-height: 30px;
   font-style: bold;
@@ -376,11 +403,47 @@ a {
 
 .filter ul {
   list-style: none;
-  font-family: "PT Sans"; "Arial"; 
+  font-family: "PT Sans", "Arial"; 
   font-size: 15px;
   line-height: 20px;  
 }
 
+.catalog-list-page-2 h3 {
+  font-family: "PT Sans", "Arial"; 
+  font-size: 18px;
+  line-height: 20px;
+  font-style: bold;
+  color: #000000;  
+}
+.catalog-item-price a {
+  font-family: "PT Sans", "Arial"; 
+  font-size: 17px;
+  line-height: 18px;
+  font-style: bold;
+  color: #ffffff;  
+}
+.description h3 {
+  font-family: "PT Sans", "Arial"; 
+  font-size: 30px;
+  line-height: 24px;
+  text-transform: uppercase;   
+}
+
+.description p {
+  font-family: "PT Sans", "Arial"; 
+  font-size: 13px;
+  line-height: 24px;   
+}
+
+pagination-list {
+  font-family: "PT Sans", "Arial";
+  color: #000000;  
+  font-size: 13px;
+  line-height: 24px;  
+}
+.pagination-item-1 {
+ background-color: #ee3643; 
+}
 .logo-footer {
   font-size: 30px;
   line-height: 30px;
@@ -394,7 +457,7 @@ a {
   background-color: #32425c;
 }
 
-.site-navigation-footer-1 a,
+.site-navigation-footer-1 li,
 .footer-contacts{
   font-size: 18px;
   line-height: 24px;
@@ -409,8 +472,8 @@ a {
 }
 
 .footer-bot p {
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 18px;
   color: #ffffff; 
 }
 .footer-bot{
@@ -424,3 +487,40 @@ a {
   color: #ffd180; 
 }
 
+.letter-form label {
+  font-size: 18px;
+  line-height: 18px;  
+}
+
+.letter-form .textpopup {
+  font-family: "PT Sans", "Arial";
+  font-size: 13px;
+  line-height: 18px; 
+  color: #999999;
+}
+
+.letter-form button {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff; 
+  background-color: #ee3643;  
+}
+
+.modal-popup {
+  font-size: 30px;
+  line-height: 18px;  
+}
+
+.button-color-red {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;  
+  background-color: #ee3643;   
+}
+
+.button-popup {
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  background-color: #ffffff;
+}
