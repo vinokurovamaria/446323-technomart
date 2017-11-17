@@ -215,7 +215,6 @@ a {
   line-height: 24px;    
 }
 
-
 .product {
  background-color: #f9f5f0;
 }
@@ -451,9 +450,8 @@ a {
 .mail-color-orange:focus,
 .link-color-orange:hover,
 .link-color-orange:focus {
-    text-decoration-line: underline;
+  text-decoration-line: underline;
 }
-
 
 .logo-footer {
   font-size: 30px;
