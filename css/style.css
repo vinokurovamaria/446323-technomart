@@ -9,6 +9,7 @@ body {
   text-transform: none; 
   background-color: #f4f7f9;    
 }
+
 .inner-page {
   font-size: 18px;
   line-height: 20px;
@@ -20,41 +21,33 @@ a {
   text-decoration: none;
 }
 
-
 .main-header li,
-.header-mid .user-navigation li,
+.user-navigation li,
 .header-bot li,
 .contacts li,
-.site-navigation-footer-1 li,
-.site-navigation-footer-2 li,
-.footer-bot li{
-  list-style: none;
-}
-
-.header-mid .user-navigation a:hover,
-.header-mid .user-navigation a:focus {
-  color: #ee3643;
-}
-
-.header-mid .user-navigation-page-2 a:hover,
-.header-mid .user-navigation-page-2 a:focus {
-  color: #ee3643;  
-}
-
+.site-navigation-footer-menu li,
+.site-navigation-footer-menu-end li,
+.footer-bot li,
+.sorting-assortment li,
+.catalog-list-assortment li,
+.pagination-list li,
 .breadcrumbs {
   list-style: none;
 }
 
-.sorting-page-2 li {
-  list-style: none;  
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: #ee3643;
 }
 
-.catalog-list-page-2 li {
-  list-style: none;   
+.user-navigation-login a:hover,
+.user-navigation-login a:focus {
+  color: #ee3643;  
 }
 
-.pagination-list li{
-  list-style: none;  
+.site-navigation li:hover,
+.site-navigation li:focus{
+  background-color: #293449
 }
 
 .filter fieldset {
@@ -66,10 +59,10 @@ a {
   line-height: 24px;
   color: #ffffff;
   background-color: #ee3643;
-  text-transform: uppercase;  
-  
+  text-transform: uppercase;    
 }
-.header-top .logo a {
+
+.logo a {
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;  
@@ -78,15 +71,14 @@ a {
 .header-mid {
   background-color: #f2f6f8;
 }
+
 .header-top,
 .seach,
 .user-blok a { 
   font-size: 17px;
   line-height: 18px;
   color: #ffffff; 
-  background-color: #293449;
-   
-    
+  background-color: #293449;   
 }
 
 .header-mid h3 {
@@ -94,8 +86,7 @@ a {
   font-size: 16px;
   line-height: 23px;
   color: #ee3643; 
-  background-color: #f4f7f9; 
-    
+  background-color: #f4f7f9;   
 }
 
 .header-mid a {
@@ -107,15 +98,13 @@ a {
 .header-mid .adress {
   font-size: 14px;
   line-height: 24px;
-  color: #32425c; 
-   
+  color: #32425c;   
 }
 
-.header-mid .check a {
+.check a {
   font-size: 17px;
   line-height: 17px;
-  color: #000000;
-     
+  color: #000000;   
 }
 
 .header-user-name {
@@ -123,17 +112,16 @@ a {
  line-height: 18px;   
 }
 
-.header-mid .user-navigation-page-2 a{
+.user-navigation-login a {
   font-size: 16px;
   line-height: 18px;  
-  color:  #32425c
+  color:  #32425c;
 }
 
-.header-bot .site-navigation li, a {
+.site-navigation li, a {
   font-size: 17px;
   line-height: 17px;
-  color: #ffffff;
-    
+  color: #ffffff;  
 }
 
 .header-bot {
@@ -149,7 +137,7 @@ a {
   font-size: 24px;
   line-height: 30px;
   font-style: bold;
-    }
+}
 
 .block a {
   color: #ffffff;
@@ -158,6 +146,7 @@ a {
   background-color: rgba( 0, 0, 0, 0.1);
   text-transform: uppercase;  
 }
+
 .block.block-orange {    
   background-color: #ffbf47;
   background-image: url(../img/icon-1.svg);
@@ -168,60 +157,59 @@ a {
   background-color: #3bbce3;
   background-image: url(../img/icon-2.svg);
   background-repeat: no-repeat;  
-
 }
 
 .block.block-purple {
   background-color: #dc91d8; 
   background-image: url(../img/icon-3.svg);
-  background-repeat: no-repeat  
+  background-repeat: no-repeat; 
 }
 
 .block.block-green {
   background-color: #8ed78f;
   background-image: url(../img/icon-4.svg);
-  background-repeat: no-repeat  
+  background-repeat: no-repeat; 
 }
 
-.block.block-orange-2 {
+.block.block-icon-orange {
   background-color: #ffc047; 
   background-image: url(../img/icon-5.svg);
-  background-repeat: no-repeat  
+  background-repeat: no-repeat;  
 }
 
-.block.block-slide-1 h3{
+.block.block-slide h3 {
   font-size: 26px;
   line-height: 30px;
   font-style: bold; 
-  text-transform: uppercase;
-   
+  text-transform: uppercase;  
 }
 
-.block.block-slide-1{
-  background-image: url(../img/slider-1.jpg)
-  position: absolute;
-  background-repeat: no-repeat  
+.block.block-slide {
+  background-image: url(../img/slider-1.jpg);
+  background-position: 0 0;  
+  background-repeat: no-repeat; 
 }
 
-.block.block-slide-1 a , 
-.block.block-slide-2 a {
-  background-color: #ee3643;
-    
+.block.block-slide a , 
+.block.block-slide-product a {
+  background-color: #ee3643; 
 }
 
-.block.block-slide-2 h3{ 
+.block.block-slide-product h3{ 
   font-size: 26px;
   line-height: 30px;
   font-style: bold; 
   text-transform: uppercase;   
 }
 
-.block.block-slide-2 {
-  background-image: url(../img/slider-2.jpg)
-  position: absolute;
+.block.block-slide-product {
+  background-image: url(../img/slider-2.jpg);
+  background-position: 0 0;  
+  background-repeat: no-repeat;   
 }
+
 .block p {
-  font-family: "PT Sans", "Arial";
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #ffffff;
   font-size: 18px;
   line-height: 24px;    
@@ -251,8 +239,8 @@ a {
   list-style: none;
 }
 
-.catalog-item h3{
-  font-family: "PT Sans", "Arial";
+.catalog-item h3 {
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
   font-size: 18px;
   line-height: 20px;
@@ -260,7 +248,7 @@ a {
 }
 
 .catalog-item p {
-  font-family: "PT Sans", "Arial";
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #a9a9a9;
   font-size: 17px;
   line-height: 18px;
@@ -268,7 +256,7 @@ a {
 }
 
 .catalog-item a {
-  font-family: "PT Sans", "Arial";
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #ffffff;
   font-size: 17px;
   line-height: 28px;
@@ -317,11 +305,12 @@ a {
 }
 
 .service p {
-  font-family: "PT Sans", "Arial";
+  font-family: "PT Sans", "Arial",  sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #000000; 
 }
+
 .service .service-navigator-color {
   font-size: 21px;
   line-height: 30px;
@@ -338,7 +327,7 @@ a {
 
 .contacts h2,
 .map h2 {
-  font-family: "PT Sans", "Arial";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 30px;
   line-height: 24px;
   text-transform: uppercase; 
@@ -346,10 +335,11 @@ a {
 
 .contacts p,
 .map p {
-  font-family: "PT Sans", "Arial";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;   
 }
+
 .contacts a,
 .map a {
   font-size: 14px;
@@ -363,7 +353,7 @@ a {
 }
 
 .breadcrumbs a {
-  font-family: "PT Sans", "Arial";  
+  font-family: "PT Sans", "Arial", sans-serif;  
   font-size: 13px;
   line-height: 18px;
   color: #000000; 
@@ -373,28 +363,32 @@ a {
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
+  background-color: #f2f6f8; 
 }
 
-.sorting-page-2 a {
+.sorting,
+.sorting-assortment{
+  background-color: #f6f2eb;
+}
+
+.sorting-assortment a {
   font-size: 13px;
   line-height: 18px;
   color: #000000;
   text-transform: uppercase;  
 }
 
-.sorting-page-2 .sorting page-2-color-red {
-  color: #ee3643;
-    
+.caption-color-red {
+  color: #ee3643;   
 }
 
-.sorting-page-2 .sorting-page-2-color-black {
-  color: rgba( 0, 0, 0, 0.1);
+.sorting-selection-color-black a {
+  color: rgba( 0, 0, 0, 0.3);
   border-bottom: 1px dashed #ee3643; 
-  
 }
 
 .filter legend {
-  font-family: "PT Sans", "Arial"; 
+  font-family: "PT Sans", "Arial", sans-serif; 
   font-size: 17px;
   line-height: 30px;
   font-style: bold;
@@ -403,47 +397,64 @@ a {
 
 .filter ul {
   list-style: none;
-  font-family: "PT Sans", "Arial"; 
+  font-family: "PT Sans", sans-serif;
   font-size: 15px;
   line-height: 20px;  
 }
 
-.catalog-list-page-2 h3 {
-  font-family: "PT Sans", "Arial"; 
+.catalog-list-assortment h3 {
+  font-family: "PT Sans", "Arial", sans-serif; 
   font-size: 18px;
   line-height: 20px;
   font-style: bold;
   color: #000000;  
 }
+
 .catalog-item-price a {
-  font-family: "PT Sans", "Arial"; 
+  font-family: "PT Sans", "Arial", sans-serif; 
   font-size: 17px;
   line-height: 18px;
   font-style: bold;
   color: #ffffff;  
 }
+
 .description h3 {
-  font-family: "PT Sans", "Arial"; 
+  font-family: "PT Sans", "Arial", sans-serif; 
   font-size: 30px;
   line-height: 24px;
   text-transform: uppercase;   
 }
 
 .description p {
-  font-family: "PT Sans", "Arial"; 
+  font-family: "PT Sans", "Arial", sans-serif; 
   font-size: 13px;
   line-height: 24px;   
 }
 
-pagination-list {
-  font-family: "PT Sans", "Arial";
+.pagination-list a {
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;  
   font-size: 13px;
   line-height: 24px;  
 }
-.pagination-item-1 {
- background-color: #ee3643; 
+
+.pagination-item-select a {
+  background-color: #ee3643; 
+  color: #ffffff;  
 }
+
+.site-navigation-footer-menu li:hover,
+.site-navigation-footer-menu li:focus,
+.site-navigation-footer-menu-end li:hover,
+.site-navigation-footer-menu-end li:focus,
+.mail-color-orange:hover,
+.mail-color-orange:focus,
+.link-color-orange:hover,
+.link-color-orange:focus {
+    text-decoration-line: underline;
+}
+
+
 .logo-footer {
   font-size: 30px;
   line-height: 30px;
@@ -457,15 +468,14 @@ pagination-list {
   background-color: #32425c;
 }
 
-.site-navigation-footer-1 li,
+.site-navigation-footer-menu li,
 .footer-contacts{
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
-  
 }
 
-.site-navigation-footer-2 a {
+.site-navigation-footer-menu-end a {
   font-size: 18px;
   line-height: 24px;
   color: #ffd180; 
@@ -476,6 +486,7 @@ pagination-list {
   line-height: 18px;
   color: #ffffff; 
 }
+
 .footer-bot{
   background-color: #293449;
 }
@@ -493,7 +504,7 @@ pagination-list {
 }
 
 .letter-form .textpopup {
-  font-family: "PT Sans", "Arial";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px; 
   color: #999999;
@@ -503,7 +514,8 @@ pagination-list {
   font-size: 14px;
   line-height: 18px;
   color: #ffffff; 
-  background-color: #ee3643;  
+  background-color: #ee3643;
+  border: none;  
 }
 
 .modal-popup {
@@ -515,7 +527,8 @@ pagination-list {
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;  
-  background-color: #ee3643;   
+  background-color: #ee3643;
+  border: none;  
 }
 
 .button-popup {
@@ -523,4 +536,5 @@ pagination-list {
   line-height: 18px;
   color: #000000;
   background-color: #ffffff;
+  border: none;  
 }
