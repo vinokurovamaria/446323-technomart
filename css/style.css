@@ -59,7 +59,8 @@ a {
   line-height: 24px;
   color: #ffffff;
   background-color: #ee3643;
-  text-transform: uppercase;    
+  text-transform: uppercase;
+  text-align: center;   
 }
 
 .logo a {
@@ -78,7 +79,8 @@ a {
   font-size: 17px;
   line-height: 18px;
   color: #ffffff; 
-  background-color: #293449;   
+  background-color: #293449;
+  text-align: center;  
 }
 
 .header-mid h3 {
@@ -129,7 +131,7 @@ a {
 }
 
 .container {
-  background-color: #ffffff;
+  background-color: #ffffff; 
 }
 
 .block h3 {
@@ -535,4 +537,78 @@ a {
   color: #000000;
   background-color: #ffffff;
   border: none;  
+}
+
+
+html,
+body {
+    min-width: 1200px;
+    min-height: 3151px;    
+}
+
+body {
+    background-size: 940px auto;
+}
+
+.main-header {
+    margin-bottom: 120px;
+    min-height: 320px;
+    list-style: none;
+}
+
+.main-navigation {
+    display: flex;  
+    flex-direction: column;
+    align-items: center;  
+}
+
+.main-header .logo {
+    width: 220px;
+    height: 46px;
+    margin-left: 130px;
+}
+
+.header-top {
+    width: 940px;
+    margin: 0;
+    padding: 0;
+    min-height: 43px;
+    margin-bottom: 46px;
+    width: 100%;
+}
+.header-mid {
+    width: 940px;
+    min-height: 160px;
+    margin-bottom: 46px;
+}
+
+.header-bot{
+    width: 940px;
+    min-height: 62px;
+}
+
+.container {
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    width: 940px;
+    min-height: 521px;
+    margin-bottom: 61px;
+}
+
+.product {
+    width: 940px;
+    min-height: 88px;
+    
+}
+. block {
+    width: 300px;
+    height: 123px;
+}
+
+.catalog-list {
+    width: 940px;
+    min-height: 362px;
+    align-items: center;
+    margin-bottom: 20px;
 }
