@@ -5,8 +5,7 @@ font-style: normal;
 font-family: "Cuprum", "Arial", sans-serif;
 font-size: 17px;
 line-height: 17px;
-color: #000000;
-text-transform: none; 
+color: #000000; 
 background-color: #ffffff;    
 }
 
@@ -61,12 +60,6 @@ color: #ffffff;
 background-color: #ee3643;
 text-transform: uppercase;
 text-align: center;   
-}
-
-.logo a {
-font-size: 24px;
-line-height: 24px;
-text-transform: uppercase;  
 }
 
 .header-mid {
@@ -243,6 +236,7 @@ line-height: 20px;
 font-weight: bold;
 }
 
+
 .catalog-item p {
 font-family: "PT Sans", "Arial", sans-serif;
 color: #a9a9a9;
@@ -300,7 +294,7 @@ color: #32425c;
 text-transform: uppercase;  
 }
 
-.service p {
+.service-text p {
 font-family: "PT Sans", "Arial",  sans-serif;
 font-size: 13px;
 line-height: 24px;
@@ -343,9 +337,10 @@ line-height: 18px;
 color: #ffffff;
 background-color: #ee3643;
 }
+
 .contacts li {
-font-size: 14px;
-line-height: 18px;
+font-size: 18px;
+line-height: 20px;
 }
 
 .breadcrumbs a {
@@ -353,6 +348,7 @@ font-family: "PT Sans", "Arial", sans-serif;
 font-size: 13px;
 line-height: 18px;
 color: #000000; 
+text-transform: uppercase;      
 }
 
 .page-title-products {
@@ -361,6 +357,29 @@ line-height: 30px;
 color: #32425c;
 background-color: #f2f6f8; 
 text-transform: uppercase;  
+}
+
+.catalog-item-assortment h3 {
+font-family: "PT Sans", "Arial", sans-serif; 
+font-size: 18px;
+line-height: 20px;
+font-weight: bold;
+}
+
+.catalog-item-price {
+font-family: "PT Sans", "Arial", sans-serif; 
+font-size: 17px;
+line-height: 18px;
+font-weight: bold;
+color:#999999;
+}
+
+.catalog-item-assortment .button {
+font-family: "PT Sans", "Arial", sans-serif; 
+font-size: 17px;
+line-height: 18px;
+font-weight: bold; 
+color: #ffffff;
 }
 
 .sorting p {
@@ -677,6 +696,10 @@ margin-bottom: 0;
 padding-bottom: 23px;
 }
 
+.slide-tool {
+display: none;
+}
+
 .slide p {
 margin-bottom: 128px;
 }
@@ -685,6 +708,7 @@ margin-bottom: 128px;
 .company {
 display: flex;
 margin-bottom: 20px;
+justify-content: space-around;
 }
 
 .catalog-list {
@@ -900,6 +924,10 @@ width: 140px;
 width: 112px;
 }
 
+.modal-letter {
+display: none;
+}
+
 .user-name {
 padding: 0;
 margin: 0;
@@ -1024,4 +1052,8 @@ width: 138px;
 margin: 0;
 padding: 0;
 margin-bottom: 77px;   
+}
+
+.modal-popup {
+display: none;
 }
