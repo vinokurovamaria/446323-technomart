@@ -45,7 +45,7 @@ color: #ee3643;
 
 .site-navigation li:hover,
 .site-navigation li:focus{
-background-color: #293449
+background-color: #293449;
 }
 
 .filter fieldset {
@@ -1103,6 +1103,15 @@ padding-top: 25px;
 padding-bottom: 25px
 }
 
+.site-navigation li{
+padding-left: 31px;
+padding-right: 31px;
+}
+
+.site-navigation a:active {
+opacity: 0.5;
+}
+
 .header-bot {
 padding-bottom: 60px;
 background-color: #f3f7f8;
@@ -1128,7 +1137,6 @@ width: 300px;
 display: flex;
 flex-direction: column;
 }
-
 
 .popular-title {
 
@@ -1384,6 +1392,10 @@ width: 300px;
 .link-wrapper {
 display: flex;
 flex-direction: column;
+}
+
+.link:active a{
+color: #ee3643;
 }
 
 .feet-back {
