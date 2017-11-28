@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,400i,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">  
   </head>
@@ -33,20 +34,21 @@
        <div class="header-mid">
               <div class="container">
                 <div class= "header-mid-wrapper">
-                   <h1>Интернет-магазин строительных материалов и иструментов для ремонта</h1>
+                   <h2>Интернет-магазин строительных материалов и иструментов для ремонта</h2>
                    <div class="header-mid-contacts">
                      <a href="tel:+7812550555" class="phone-header">+7(812)555-05-55</a>
                      <p class="adress">г.Санкт-Петербург, ул.Конюшенная, д.19/8</p>
                    </div>
                    <div class="user-name">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18"><path fill="#c5c5c5" d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/></svg>
                       <p>Равшан Джамшутович</p>
                    </div>
+                   <div class="user-navigation-login-wrapper">
                   <ul class="user-navigation-login">
-                     <li> 
-                     <img src="img/icon-user.svg" width="19" height="19" alt="user">
                      <li><a href="#">Мои заказы</a></li>
                      <li><a href="#">Личный кабинет</a></li>
                   </ul>
+                  </div>
                 </div>
              </div>
         </div>
@@ -65,19 +67,15 @@
     <main class="container-sorting">
         <div class="container">
            <ul class="breadcrumbs">
-             <li>
+             <li class="home">
                <a href="index.html">
-                  <img src="img/icon-home.svg" width="15" height="12" alt="домик">
-                  <img src="img/icon-right-small.svg" width="8" height="15" alt="стрелка">
                </a>
              </li>   
              <li>
                  <a href="#">Каталог</a>
-                 <img src="img/icon-right-small.svg" width="8" height="15" alt="стрелка">
              </li>
              <li>
                  <a href="#">Инструменты</a>
-                 <img src="img/icon-right-small.svg" width="8" height="15" alt="стрелка">
              </li>
              <li><a href="#">Перфораторы</a></li>
             </ul>
@@ -90,12 +88,27 @@
              <form class="filter" method="get" action="https://echo.htmlacademy.ru">
              <fieldset>
                 <legend class="sorting-filter">Цена:</legend>
-                <ul>
+                    <div class="controls">
+                      
+                       <div class="scale">
+                          <div class="fill-scale">
+                              
+                          </div>
+                          <div class="toggle toggle-min"></div>
+                      <div class="toggle toggle-max"></div>
+                       </div>
+                      
+                    </div>
+                <ul class="filter-options">
                   <li class="filter-option">
-                  <input class="filter-prices" id="filter-prices" type="text" name="prices" placeholder="0">
+                  <label class="visually-hidden" for="filter-prices-min">Минимальная цена</label>
+                  <input class="filter-prices" id="filter-prices-min" type="text" name="prices" placeholder="0">
+                  </li>
+                  <li>&mdash;
                   </li>
                   <li class="filter-option">
-                    <input class="filter-prices" id="filter-prices" type="text" name="prices" placeholder="30000">
+                   <label class="visually-hidden" for="filter-prices-max">Максимальная цена</label>
+                    <input class="filter-prices" id="filter-prices-max" type="text" name="prices" placeholder="30000">
                   </li>
                </ul>
               </fieldset>      
@@ -140,17 +153,17 @@
               <button type="submit" class="filter-button button">Показать</button>
             </form>
              </div>
-         </div>
+                
               <div class="sorting-assortment">
-              <div class="selection-option">
-              <p>Сортировка</p>
-               <ul class="selection-derection"> 
-                <li class= "caption-color-red"><a href="#">По цене</a></li>
-                <li class= "sorting-selection-color-black"><a href="#">По типу</a></li>
-                 <li class= "sorting-selection-color-black"><a href="#">По Функционалу</a></li>
-             </ul>
-         </div>
-           
+                <div class="selection-option">
+                   <p>Сортировка</p>
+                      <ul class="selection-derection"> 
+                        <li class= "caption-color-red"><a href="#">По цене</a></li>
+                        <li class= "sorting-selection-color-black"><a href="#">По типу</a></li>
+                        <li class= "sorting-selection-color-black"><a href="#">По Функционалу</a></li>
+                      </ul>
+                </div>
+                              
      <div class="catalog-items">
           <div class="catalog-item">
               <div class="flag flag-new">новинка</div>
@@ -266,17 +279,17 @@
               <div class="title">Перфоратор BOSCH BFG 2000</div>
               <div class="price">12 500Р</div>
           </div>  
-    </div>
-   
+              </div>
+            
             <ul class="pagination-list">
               <li class="pagination-item pagination-item-select"><a href="#">1</a></li>
               <li class="pagination-item"><a href="#">2</a></li>
               <li class="pagination-item"><a href="#">3</a></li>
               <li class="pagination-item pagination-item-next"><a href="#">Следующая</a></li>
             </ul>
-            </div>  
-        </div>
-        </div>
+ 
+</div> 
+   </div>
     <section class="description">
        <div class="container">
             <h3>Пара слов о перфораторах</h3>
@@ -289,7 +302,7 @@
     <div class="footer-top">
        <div class="container">
           <div class="footer-top-wrapper">
-            <a class="logo-footer">Техномарт</a>
+            <a href="index.html" class="logo-footer">Техномарт</a>
             <ul class="site-navigation-footer-menu">
                <li><a href="company.html">Компания</a></li>
                <li><a href="news.html">Новости</a></li>
