@@ -34,7 +34,7 @@
         <div class="header-mid">
               <div class="container">
                 <div class= "header-mid-wrapper">
-                   <h2>Интернет-магазин строительных материалов и иструментов для ремонта</h2>
+                   <h2>Интернет-магазин <br> строительных материалов и иструментов для ремонта</h2>
                    <div class="header-mid-contacts">
                    <a href="tel:+7812550555" class="phone-header">+7(812)555-05-55</a>
                    <p class="adress">г.Санкт-Петербург, ул.Конюшенная, д.19/8</p>
@@ -75,9 +75,21 @@
                   <h2>Инструмент</h2>
                   <a href="#">На все случаи</a>
                </section>
-               <section class="slide slide-first">
-                  <h3>Перфораторы</h3>
-                  <p>Настоящие мужские игрушки</p>
+               <div class="slider">
+                 <div class="slider-toggles">
+                    <input class="slider-toggle" id="toggle1" type="radio" name="slider-toggle" checked>
+                     <label class="slider-switch" for="toggle1"></label>
+                    <input class="slider-toggle" id="toggle2" type="radio" name="slider-toggle">
+                    <label class="slider-switch" for="toggle2"></label>
+                  </div>  
+                  <div class="slider-controls">
+                  <label class="slider-control slider-control-left" for="toggle1"></label>
+                  <label class="slider-control slider-control-right" for="toggle2"></label>
+                  </div>
+                 <section class="slide slide-first">
+                  
+                   <h3>Перфораторы</h3>
+                    <p>Настоящие мужские игрушки</p>
                   <a href="catalog.html">Открыть каталог</a>
                 </section>
                <section class="slide slide-second">
@@ -85,6 +97,7 @@
                    <p>Соседям на радость</p>
                    <a href="catalog.html">Открыть каталог</a>
                </section>
+              </div> 
           </div>
           <div class="item">
                <section class="block block-purple">
@@ -197,13 +210,15 @@
            <h3>Cервисы</h3>
            <p class="service-text">Хороший интернет-магазин отличается отплохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
            <div class="service-wrapper">
-               <ul class="service-navigator">
-                   <li class="service-navigator-current">Доставка</li>
-                   <li>Гарантия</li>
-                   <li>Кредит</li>
-                </ul>
+                  <input type="radio" id="box1" name='box' checked>
+                  <input type="radio" id="box2" name='box'>
+                  <input type="radio" id="box3" name='box'>
+               <div class="service-navigator">
+                   <label class="service-navigator-current" for="box1">Доставка</label>
+                   <label for="box2" >Гарантия</label>
+                   <label for="box3">Кредит</label>
+                </div>
                 <div class="service-slide service-slide-delivery">
-                    <!--3 слайда-->
                    <h2>Доставка</h2>
                   <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду бесплатно!</p>
                   <p>Ведь мы неплохо заработаем, поднимая его на Ваш этаж!</p>
@@ -212,7 +227,6 @@
                     <h2>Гарантия</h2>
                     <p>Если купленный у нас товар поломается или заискрит,а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.</p>
                     <p>Дом уж восстановите как-нибудь сами.</p>
-        
                 </div>
                 <div class="service-slide service-slide-credit">
                     <h2>Кредит</h2>
@@ -298,7 +312,7 @@
                         </div>
                         <div class="link-wrapper developed">
                           <p>Разработано-</p>
-                          <a class="link-color-orange" href="http://htmlacademy.ru">htmlacademy.ru</a>
+                          <a class="link-color-orange" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
                         </div>
                    </div>
                </div>
