@@ -5,8 +5,8 @@
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.min.css">
   </head>
   <body>
     <header class="main-header">
@@ -34,8 +34,12 @@
       </div>
       <div class="header-mid">
         <div class="container">
-          <div class= "header-mid-wrapper">
-            <h2>Интернет-магазин <br> строительных материалов и инструментов для ремонта</h2>
+          <div class="header-mid-wrapper">
+            <div class="header-mid-title">
+              <span>Интернет-магазин</span> 
+              <span>строительных материалов</span>
+              <span>и инструментов для ремонта</span>
+            </div>
             <div class="header-mid-contacts">
               <a href="tel:+7812550555" class="phone-header">+7 (812) 555-05-55</a>
               <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -174,31 +178,31 @@
         <section class="company">
           <div class="popular-title">
             <h2>Популярные производители:</h2>
-            <a href="#">Вcе производители</a>
+            <a class="popular-button" href="#">Вcе производители</a>
           </div>
           <div class="pictures-company">
-            <a href="#">
+            <a class="pictures-company-link" href="#">
               <img src="img/bosch.jpg" width="126" height="37" alt="Производитель 1">
             </a>
-            <a href="#">
+            <a class="pictures-company-link" href="#">
               <img src="img/Makita.jpg" width="123" height="40" alt="Производитель 2">
             </a>
-            <a href="#">
+            <a class="pictures-company-link" href="#">
               <img src="img/DeWALT.jpg" width="146" height="44" alt="Производитель 3">
             </a>
-            <a href="#">
-              <img src="img/interskol.jpg" width="200" height="88" alt="Производитель 4">
+            <a class="pictures-company-link" href="#">
+              <img src="img/interskol.png" width="200" height="88" alt="Производитель 4">
             </a>
-            <a href="#">
+            <a class="pictures-company-link" href="#">
               <img src="img/Hitachi.jpg" width="169" height="31" alt="Производитель 5">
             </a>
-            <a href="#">
+            <a class="pictures-company-link" href="#">
               <img src="img/LG.jpg" width="121" height="73" alt="Производитель 6">
             </a>
-            <a href="#">
+            <a class="pictures-company-link" href="#">
               <img src="img/AEG.jpg" width="151" height="96" alt="Производитель 7">
             </a>
-            <a href="#">
+            <a class="pictures-company-link" href="#">
               <img src="img/Metabo.jpg" width="204" height="69" alt="Производитель 8">
             </a>
           </div>
@@ -241,7 +245,7 @@
           <section class="contacts">
             <h2>Компания &laquo;Техномарт&raquo;</h2>
             <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-            <p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями: :</p>
+            <p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
             <ul>
               <li>Деловые линии</li>
               <li>Автотрейдинг</li>
@@ -305,7 +309,7 @@
             <div class="link">
               <div class="link-wrapper feet-back">
                 <p>Обратная связь:</p>
-                <a class="link-color-orange" href="mail@Htmlacademy.ru">mail@Htmlacademy.ru</a>
+                <a class="link-color-orange" href="mail@Htmlacademy.ru">mail@htmlacademy.ru</a>
               </div>
               <div class="link-wrapper developed">
                 <p>Разработано &mdash;</p>
@@ -342,6 +346,6 @@
       <button class="map-close button-cross" type="button">Закрыть</button>
     </div>
     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0c4d76513e470e5fd21674cbdcf44934150e4500c64c2e2df236fbe284156666&amp;lang=ru_RU&amp;scroll=false&id=interactive-map"></script>
-    <script src="js/popup-letter.js"></script>
+    <script src="/js/popup-letter.min.js"></script>
   </body>
 </html>
